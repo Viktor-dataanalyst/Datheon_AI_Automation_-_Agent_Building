@@ -1,14 +1,15 @@
 ## PROJECT 2: Autonomous Customer Support & Intelligent Email Triage
-As an AI Automation Intern, I built an Autonomous Customer Support & Intelligent Email Triage System using Make.com, OpenAI, and Gmail to streamline customer communications.   
 
-![Project2](../images/AIAuto.gif)
+![PROJECT1](../images/AI_2.gif)
 
-## 📩 How it works:
+    Key System Architecture & Workflow Mechanics
+The system is built on **Make.com** and integrates **Gmail** with **OpenAI** (ChatGPT/Whisper) models using a 4-step pipeline:   
 
-**1️⃣ Watch Inbox:** Monitors incoming customer emails automatically.<br>  
-
-**2️⃣ AI Analysis:** Uses OpenAI to evaluate email sentiment, extract intent, and separate urgent technical issues from billing queries.<br> 
-
-**3️⃣ JSON Parsing:** Converts AI decisions into structured data for precise execution.<br>
-
-**4️⃣ Automated Response:** Drafts and sends personalized, context-aware replies back to the customer instantly. By taking human intervention out of initial email routing, this pipeline significantly reduces response time and frees up team members to tackle higher-priority challenges!   
+1. **Trigger — Gmail (Watch emails):**
+    - Monitors the inbox every 15 minutes for new incoming support emails.   
+2. **AI Triage — OpenAI (Simple text prompt):**
+    - Processes the raw text content of the email to analyze sentiment, categorize intent (e.g., distinguishing urgent support tickets vs. routine billing queries), and perform knowledge retrieval to generate an appropriate response.   
+3. **Data Structuring — JSON (Parse JSON):**
+    - Formats and structures the unstructured output from OpenAI into standardized JSON parameters (such as response body, ticket priority/tags, and recipient address) for downstream execution.   
+4. **Execution — Gmail (Reply to an email):**
+    - Automatically crafts and dispatches polite, context-aware email replies directly back to the sender.   
