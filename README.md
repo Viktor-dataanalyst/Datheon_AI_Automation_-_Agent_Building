@@ -1,3 +1,8 @@
+# 📊 My AI Automation and Agent Building Internship Projects
+This repository is a collection of all projects I completed as an intern at Datheon. It tracks my journey in creating AI assisted pipelines/workflows all aimed at streamlining repetative task to reduce human input.
+
+# Featured Projects
+Each project has it own dedicated Readme with more details.
 
 ## Project 1: Multi-Source Lead Routing & Instant AI Qualification
 *Overview* <br>
